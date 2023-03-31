@@ -1,0 +1,9 @@
+<div class="row w-85 p-3 border border-2 border-primary mx-1 mt-2">
+    <form>
+        <div class="mb-3">
+            <label for="exampleInput" class="form-label">Γράψτε μια λέξη:</label>
+            <input #newItem type="text" class="form-control" id="exampleInput" >
+        </div>
+        <button (click)="addNewItem(newItem.value)" (click)="newItem.value= ''" type="button"  class="btn btn-primary">Υποβολή</button>
+    </form>
+</div>

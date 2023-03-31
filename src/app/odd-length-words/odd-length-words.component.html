@@ -1,0 +1,7 @@
+<div class=" p-3 border border-2 border-primary mx-1 mt-3">
+    <h6>Λέξεις με μονό μήκος</h6>
+    <ul>
+        <li class="list-group-item" *ngIf="message.length === 0">Δεν υπάρχουν</li>
+        <li class="list-group-item" *ngFor="let item of message" >{{ item }}</li>
+    </ul>
+</div>
